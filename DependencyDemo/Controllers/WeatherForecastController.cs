@@ -9,6 +9,7 @@ public class SingletonController : ControllerBase
 {
     private readonly ISingleton _singleton1;
     private readonly ISingleton _singleton2;
+
     public SingletonController(ISingleton singleton1, ISingleton singleton2)
     {
         _singleton1 = singleton1;
@@ -34,6 +35,7 @@ public class ScopeController : ControllerBase
 {
     private readonly IScoped _scope1;
     private readonly IScoped _scope2;
+
     public ScopeController(IScoped scope1, IScoped scope2)
     {
         _scope1 = scope1;
@@ -59,6 +61,7 @@ public class TransientController : ControllerBase
 {
     private readonly ITransient _transient1;
     private readonly ITransient _transient2;
+
     public TransientController(ITransient transient1, ITransient transient2)
     {
         _transient1 = transient1;
