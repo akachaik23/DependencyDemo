@@ -31,12 +31,12 @@ public class SingletonController : ControllerBase
 
 [ApiController]
 [Route("[controller]")]
-public class ScopeController : ControllerBase
+public class ScopedController : ControllerBase
 {
     private readonly IScoped _scope1;
     private readonly IScoped _scope2;
 
-    public ScopeController(IScoped scope1, IScoped scope2)
+    public ScopedController(IScoped scope1, IScoped scope2)
     {
         _scope1 = scope1;
         _scope2 = scope2;
